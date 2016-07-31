@@ -31,7 +31,7 @@ def mod(n, modulus):
         Keyword arguments:
         n - the number to take modulo by
         modulus - the modulus
-        returns n modo modulus
+        returns n mod modulus
     '''
     if not(float(modulus).is_integer()):
         raise ValueError('Modulus is not an integer')
