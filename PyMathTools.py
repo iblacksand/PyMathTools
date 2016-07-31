@@ -2,7 +2,7 @@
 # This is free and please make any changes you want no need for credit but would appreciate it
 from math import gcd
 
-__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_table']
+__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_table', 'elliptic_card']
 
 
 def binary_search(array, target):
@@ -102,3 +102,24 @@ def latex_gen_table(array, title, xaxis, yaxis, xmin, ymin, xmax, ymax):
         w.write("(" + str(array[i][0]) + "," + str(array[i][1]) + ")")
     w.write("\n};\n\n")
     w.write("\end{axis}\n\end{tikzpicture}\n\end{document}")
+
+def elliptic_card(a,b,m):
+    ''' Gets the cardinality(number of solutions) on an elliptic curve. Follows form y^2 = x^3 + ax + b mod m. Counts the point at infinity
+    Keyword arguments:
+    a - the a value in the formula
+    b - the b value in the formula
+
+    returns an int of the cardinality of the function
+    '''
+    x = []
+    y = []
+    card = 1
+    for i in range(m):
+        y.append(mod(i**2, m))
+    for i in range(m):
+        x.append(mod((i**3 + a*i + b), m))
+    for i in range(len(x)):
+        for j in range(len(y)):
+            if x[i] == y[j]:
+                card = card + 1
+    return card
