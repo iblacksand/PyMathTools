@@ -1,3 +1,5 @@
+__all__ = ['binary_search', 'mod', 'to_ints', 'read_file']
+
 
 def binary_search(array, target):
     """ Does a binary search on to find the index of an element in an array. WARNING - ARRAY HAS TO BE SORTED
@@ -40,3 +42,32 @@ def mod(n, modulus):
             return i
         else:
             raise ValueError('Inverse of n is not an integer')
+
+def to_ints(array):
+    ''' converts everything in an array into ints
+
+    Keyword arguments
+    array - the array containing the ints
+    returns an array with the conveted ints
+    '''
+    for i in range(len(array)):
+        array[i] = int(array[i])
+    return array
+
+def read_file(f):
+    ''' reads a file and converts the file into an array of floats. It seperates numbers by spaces and will go through all the lines. You can use the to_ints function to convert it.
+
+    Keyword arguments:
+    f - the path/name of the file
+
+    returns an array of floats
+    '''
+    r = open(f, "r")
+    s = str(r.readline())
+    a = []
+    while s != "":
+        s = s.strip().split(" ")
+        for i in s:
+            a.append(float(i))
+        s = str(r.readline())
+    return a
