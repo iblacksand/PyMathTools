@@ -1,3 +1,7 @@
+# PyMathTools by John Elizarraras
+# This is free and feel free to make any changes no need for credit but would appreciate it
+
+
 __all__ = ['binary_search', 'mod', 'to_ints', 'read_file']
 
 
@@ -10,14 +14,14 @@ def binary_search(array, target):
     """
     lower = 0
     upper = len(array)
-    while lower < upper:   # use < instead of <=
+    while lower < upper:
         x = lower + (upper - lower) // 2
         val = array[x]
         if target == val:
             return x
         elif target > val:
-            if lower == x:   # this two are the actual lines
-                break        # you're looking for
+            if lower == x:
+                break
             lower = x
         elif target < val:
             upper = x
