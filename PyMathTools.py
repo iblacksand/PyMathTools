@@ -2,8 +2,8 @@
 def binary_search(array, target):
     """ Does a binary search on to find the index of an element in an array
         Keyword arguments:
-    array - the array that contains the target
-    target - the target element for which its index will be returned
+        array - the array that contains the target
+        target - the target element for which its index will be returned
         returns the index of target in array
     """
     lower = 0
