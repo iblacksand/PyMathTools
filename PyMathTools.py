@@ -1,6 +1,6 @@
 # PyMathTools by John Elizarraras
 # This is free and feel free to make any changes no need for credit but would appreciate it
-
+from math import gcd
 
 __all__ = ['binary_search', 'mod', 'to_ints', 'read_file']
 
@@ -39,13 +39,15 @@ def mod(n, modulus):
         return n % modulus
     else:
         if float(1/n).is_integer():
+            if gcd(1/n, modulus) != 1:
+                raise ValueError('Inverse of n is not coprime with modulus')
             n = int(1/n)
             i = 1
             while (n * i) % modulus != 1:
                 i = i + 1
             return i
         else:
-            raise ValueError('Inverse of n is not an integer')
+            raise ValueError('Inverse of n is not an integer and n is a fraction')
 
 def to_ints(array):
     ''' converts everything in an array into ints
@@ -75,3 +77,5 @@ def read_file(f):
             a.append(float(i))
         s = str(r.readline())
     return a
+
+def
