@@ -1,6 +1,6 @@
 
 def binary_search(array, target):
-    """ Does a binary search on to find the index of an element in an array
+    """ Does a binary search on to find the index of an element in an array. WARNING - ARRAY HAS TO BE SORTED
         Keyword arguments:
         array - the array that contains the target
         target - the target element for which its index will be returned
