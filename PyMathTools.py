@@ -1,5 +1,5 @@
 # PyMathTools by John Elizarraras
-# This is free and feel free to make any changes no need for credit but would appreciate it
+# This is free and please make any changes you want no need for credit but would appreciate it
 from math import gcd
 
 __all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_table']

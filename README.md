@@ -1,6 +1,8 @@
 # PyMathTools
 A collection of math functions for python that is lightweight. It is mainly an alternative to [Sage Math](http://www.sagemath.org/) and the similar.
 
+Download the latest release [here](https://github.com/iblacksand/PyMathTools/releases)
+
 ## List of Functions
 
 binary_search - a standard binary search to find the index of an element (list has to be sorted)
