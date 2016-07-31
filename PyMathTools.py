@@ -1,4 +1,4 @@
-@staticmethod
+
 def binary_search(array, target):
     """ Does a binary search on to find the index of an element in an array
         Keyword arguments:
