@@ -78,7 +78,7 @@ def read_file(f):
         s = str(r.readline())
     return a
 
-def latex_gen_table(array, title, xaxis, yaxis, xmin, ymin, xmax, ymax):
+def latex_gen_graph(array, title, xaxis, yaxis, xmin, ymin, xmax, ymax):
     ''' generates a tikz graph with the provided points
     ----
     if there are too many points(out of memory) try using 'pdflatex --enable-write18 --extra-mem-bot=10000000 --synctex=1 <filename>' to make it compile
