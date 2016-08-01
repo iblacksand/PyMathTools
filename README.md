@@ -14,7 +14,7 @@ Download the latest release [here](https://github.com/iblacksand/PyMathTools/rel
 
 [read_file](https://github.com/iblacksand/PyMathTools/wiki/read_file) - reads a file of floats and puts it into an array of floats
 
-[latex_gen_table](https://github.com/iblacksand/PyMathTools/wiki/latex_gen_table) - takes a 2d array of points and converts it into a tikz graph
+[latex_gen_graph](https://github.com/iblacksand/PyMathTools/wiki/latex_gen_graph) - takes a 2d array of points and converts it into a tikz graph
 
 [elliptic_card](https://github.com/iblacksand/PyMathTools/wiki/elliptic_card) - finds the cardinality of an elliptic curve
 
