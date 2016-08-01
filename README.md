@@ -18,6 +18,8 @@ Download the latest release [here](https://github.com/iblacksand/PyMathTools/rel
 
 [elliptic_card](https://github.com/iblacksand/PyMathTools/wiki/elliptic_card) - finds the cardinality of an elliptic curve
 
+[is_prime](https://github.com/iblacksand/PyMathTools/wiki/is_prime) - checks if a number is prime
+
 and many more to come.
 
 documentation on functions are located in PyMathTools.py or in the [wiki](https://github.com/iblacksand/PyMathTools/wiki)

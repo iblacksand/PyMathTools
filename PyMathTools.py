@@ -2,7 +2,7 @@
 # This is free and please make any changes you want no need for credit but would appreciate it
 from math import gcd
 
-__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_graph', 'elliptic_card']
+__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_graph', 'elliptic_card', 'is_prime']
 
 
 def binary_search(array, target):
@@ -124,5 +124,30 @@ def elliptic_card(a,b,m):
                 card = card + 1
     return card
 
+def is_prime(n):
+    """ Checks if a number is prime.
 
-def
+    Keyword arguments:
+    n - the possible prime to check
+    returns true if n is prime but false if not.
+    """
+    if n == 2:
+        return True
+    if n == 3:
+        return True
+    if n % 2 == 0:
+        return False
+    if n % 3 == 0:
+        return False
+
+    i = 5
+    w = 2
+
+    while i * i <= n:
+        if n % i == 0:
+            return False
+
+        i += w
+        w = 6 - w
+
+    return True
