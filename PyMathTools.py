@@ -2,7 +2,7 @@
 # This is free and please make any changes you want no need for credit but would appreciate it
 from math import gcd
 
-__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_table', 'elliptic_card']
+__all__ = ['binary_search', 'mod', 'to_ints', 'read_file', 'latex_gen_graph', 'elliptic_card']
 
 
 def binary_search(array, target):
@@ -78,7 +78,7 @@ def read_file(f):
         s = str(r.readline())
     return a
 
-def latex_gen_table(array, title, xaxis, yaxis, xmin, ymin, xmax, ymax):
+def latex_gen_graph(array, title, xaxis, yaxis, xmin, ymin, xmax, ymax):
     ''' generates a tikz graph with the provided points
     ----
     if there are too many points(out of memory) try using 'pdflatex --enable-write18 --extra-mem-bot=10000000 --synctex=1 <filename>' to make it compile
@@ -123,3 +123,6 @@ def elliptic_card(a,b,m):
             if x[i] == y[j]:
                 card = card + 1
     return card
+
+
+def

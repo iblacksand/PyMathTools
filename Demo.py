@@ -19,6 +19,6 @@ print(a)
 a = to_ints(a)
 print(a)
 
-# latex_gen_table
+# latex_gen_graph
 b = [[0,0], [1,1], [2,2], [4,4], [5,5]]
-latex_gen_table(b, "Line of the form $y = x$", "$x$", "$y$", 0, 0, 5, 5)
+latex_gen_graph(b, "Line of the form $y = x$", "$x$", "$y$", 0, 0, 5, 5)
