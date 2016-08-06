@@ -26,4 +26,4 @@ documentation on functions are located in PyMathTools.py or in the [wiki](https:
 
 
 ---
-See Demo.py for an example of all of the functions it has.
+See Demo.py for an example of all of the functions and how to use them.
